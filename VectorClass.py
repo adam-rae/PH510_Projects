@@ -12,7 +12,7 @@ import numpy as np
 
 class Vector:
     """
-       Vector class for three dimensional quantities using Cartesian coordiantes
+       Vector class for three dimensional quantities using Cartesian coordinates
     """
     def __init__(self, i, j, k):
         self.i = i
@@ -62,6 +62,31 @@ class Vector:
                       -(self.i * other.k - self.k * other.i),
                       self.i * other.j - self.j * other.i)
     
+    def area(self,other,other2):
+        """
+        Given 3 vertice instances, calculates the area of the triangle they create
+        
+        """
+        line_ab = other - self
+        line_ac = other2 - self
+        return (Vector.cross(line_ab, line_ac)).magnitude()/2
+    
+    def angle(self,other):
+        """
+        Given two instances, calculates the angle between them
+
+        """
+        return np.rad2deg(np.arccos(Vector.dot(self,other)/ (self.magnitude() * other.magnitude())))
+    
+    def angle_vertices(self,other,other2):
+        """
+        Taking 3 vertice points, caclulates the internal angles of the triangle they create
+        """
+        line_ab, line_ac = other - self, other2 - self
+        line_ba, line_bc = self - other, other2 - other
+        line_ca, line_cb = self - other2, other - other2
+        return Vector.angle(line_ab, line_ac), Vector.angle(line_bc, line_ba), Vector.angle(line_cb, line_ca)
+    
 class PolarVector(Vector):
     """
        Vector class for three dimensional quantities using spherical/polar coordinates in degrees
@@ -70,9 +95,9 @@ class PolarVector(Vector):
         theta = np.deg2rad(theta)
         phi = np.deg2rad(phi)
         Vector.__init__(self,
-                        r*np.cos(theta) * np.cos(phi),
-                        r*np.cos(theta) * np.sin(phi),
-                        r*np.sin(theta))
+                        r*np.sin(theta) * np.cos(phi),
+                        r*np.sin(theta) * np.sin(phi),
+                        r*np.cos(theta))
         
     def r(self):
         """
@@ -94,7 +119,7 @@ class PolarVector(Vector):
         
     def __str__(self):
         """
-        Assumes floating point when printing
+        Assumes floating point when printing and converts from Cartesian to polar
         """
         r = self.r()
         phi = self.phi()
