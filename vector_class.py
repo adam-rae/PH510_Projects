@@ -151,4 +151,3 @@ class PolarVector(Vector):
         phi = self.phi()
         theta = self.theta()
         return f"PolarVector: ({r:.2f}, {theta:.2f}, {phi:.2f})"
-    
