@@ -1,0 +1,32 @@
+===================================================================================
+SLURM Job ID:            11723029
+Submit time:             Wed Feb 05 19:50:17 GMT 2025 (Unix Epoch time: 1738785017)
+Start time:              Wed Feb 05 19:50:38 GMT 2025 (Unix Epoch time: 1738785038)
+No. nodes:               1
+No. tasks:               16
+Job name:                goodcode_test
+Account:                 teaching
+QoS:                     teaching
+Partition (queue):       teaching-gpu
+Submit directory:        /users/vib22141/PH510/Task1
+Script name:             /users/vib22141/PH510/Task1/generic.sh
+Master node:             weegpu4
+Nodes used:              weegpu4
+Task distribution:       
+===================================================================================
+
+Pi value: 3.141592622174272
+Time: 42.84090542793274
+Pi value: 3.141592590759210
+Time: 22.236079692840576
+Pi value: 3.141592527925816
+Time: 11.986303329467773
+Pi value: 3.141592402262244
+Time: 6.558762788772583
+Pi value: 3.141592150935034
+Time: 4.182471513748169
+===================================================================================
+SLURM job 11723029 ended:     Wed Feb 05 19:50:42 GMT 2025 (Unix Epoch time: 1738785042)
+This is an estimated end time using the 'date' command from node weegpu4.hpc.strath.ac.uk
+For accurate timings, use 'sacct -j 11723029 -X --format=Submit,Start,End,Elapsed'
+======================================================================================

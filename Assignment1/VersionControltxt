@@ -1,0 +1,10 @@
+Version Control txt file:
+
+Version 1:
+First working version of the calculation tested only for a 2 core job.
+
+Version 2:
+Timing method added, calculations for up to 16 cores confirmed possible, improved calculation by removing extra summations.
+
+Version 3:
+Improvements made based on pylint score.

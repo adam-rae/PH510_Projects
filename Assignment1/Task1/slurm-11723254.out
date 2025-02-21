@@ -1,0 +1,29 @@
+************* Module goodcode_v3
+goodcode_v3.py:78:10: W1309: Using an f-string that does not have any interpolated variables (f-string-without-interpolation)
+
+------------------------------------------------------------------
+Your code has been rated at 9.52/10 (previous run: 8.57/10, +0.95)
+
+===================================================================================
+SLURM Job ID:            11723254
+Submit time:             Wed Feb 05 22:15:48 GMT 2025 (Unix Epoch time: 1738793748)
+Start time:              Wed Feb 05 22:16:38 GMT 2025 (Unix Epoch time: 1738793798)
+No. nodes:               1
+No. tasks:               1
+Job name:                goodcode_test
+Account:                 teaching
+QoS:                     teaching
+Partition (queue):       teaching-gpu
+Submit directory:        /users/vib22141/PH510/Task1
+Script name:             /users/vib22141/PH510/Task1/generic.sh
+Master node:             weegpu4
+Nodes used:              weegpu4
+Task distribution:       
+===================================================================================
+
+===================================================================================
+SLURM job 11723254 ended:     Wed Feb 05 22:15:09 GMT 2025 (Unix Epoch time: 1738793709)
+This is an estimated end time using the 'date' command from node weegpu4.hpc.strath.ac.uk
+For accurate timings, use 'sacct -j 11723254 -X --format=Submit,Start,End,Elapsed'
+======================================================================================
+slurmstepd: error: Pid 714302 is still in the freezer job cgroup.  It might be left uncleaned after the job.

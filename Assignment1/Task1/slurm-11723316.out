@@ -1,0 +1,24 @@
+===================================================================================
+SLURM Job ID:            11723316
+Submit time:             Wed Feb 05 22:40:14 GMT 2025 (Unix Epoch time: 1738795214)
+Start time:              Wed Feb 05 22:40:38 GMT 2025 (Unix Epoch time: 1738795238)
+No. nodes:               1
+No. tasks:               16
+Job name:                goodcode_test
+Account:                 teaching
+QoS:                     teaching
+Partition (queue):       teaching-gpu
+Submit directory:        /users/vib22141/PH510/Task1
+Script name:             /users/vib22141/PH510/Task1/piCalc_16core.sh
+Master node:             weegpu4
+Nodes used:              weegpu4
+Task distribution:       
+===================================================================================
+
+Pi value for 16 cores: 3.141592653589757
+Time: 4.272852659225464
+===================================================================================
+SLURM job 11723316 ended:     Wed Feb 05 22:39:14 GMT 2025 (Unix Epoch time: 1738795154)
+This is an estimated end time using the 'date' command from node weegpu4.hpc.strath.ac.uk
+For accurate timings, use 'sacct -j 11723316 -X --format=Submit,Start,End,Elapsed'
+======================================================================================

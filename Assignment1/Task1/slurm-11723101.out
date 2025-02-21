@@ -1,0 +1,24 @@
+===================================================================================
+SLURM Job ID:            11723101
+Submit time:             Wed Feb 05 20:28:39 GMT 2025 (Unix Epoch time: 1738787319)
+Start time:              Wed Feb 05 20:30:11 GMT 2025 (Unix Epoch time: 1738787411)
+No. nodes:               1
+No. tasks:               8
+Job name:                goodcode_test
+Account:                 teaching
+QoS:                     teaching
+Partition (queue):       teaching-gpu
+Submit directory:        /users/vib22141/PH510/Task1
+Script name:             /users/vib22141/PH510/Task1/piCalc_8core.sh
+Master node:             weegpu5
+Nodes used:              weegpu5
+Task distribution:       
+===================================================================================
+
+Pi value: 3.141592653589741
+Time: 6.1483423709869385
+===================================================================================
+SLURM job 11723101 ended:     Wed Feb 05 20:28:49 GMT 2025 (Unix Epoch time: 1738787329)
+This is an estimated end time using the 'date' command from node weegpu5.hpc.strath.ac.uk
+For accurate timings, use 'sacct -j 11723101 -X --format=Submit,Start,End,Elapsed'
+======================================================================================

@@ -1,0 +1,28 @@
+===================================================================================
+SLURM Job ID:            11723311
+Submit time:             Wed Feb 05 22:39:55 GMT 2025 (Unix Epoch time: 1738795195)
+Start time:              Wed Feb 05 22:40:14 GMT 2025 (Unix Epoch time: 1738795214)
+No. nodes:               1
+No. tasks:               1
+Job name:                goodcode_test
+Account:                 teaching
+QoS:                     teaching
+Partition (queue):       teaching-gpu
+Submit directory:        /users/vib22141/PH510/Task1
+Script name:             /users/vib22141/PH510/Task1/sbatchula.sh
+Master node:             weegpu4
+Nodes used:              weegpu4
+Task distribution:       
+===================================================================================
+
+Submitted batch job 11723312
+Submitted batch job 11723313
+Submitted batch job 11723314
+Submitted batch job 11723315
+Submitted batch job 11723316
+===================================================================================
+SLURM job 11723311 ended:     Wed Feb 05 22:38:43 GMT 2025 (Unix Epoch time: 1738795123)
+This is an estimated end time using the 'date' command from node weegpu4.hpc.strath.ac.uk
+For accurate timings, use 'sacct -j 11723311 -X --format=Submit,Start,End,Elapsed'
+======================================================================================
+slurmstepd: error: Pid 716144 is still in the freezer job cgroup.  It might be left uncleaned after the job.

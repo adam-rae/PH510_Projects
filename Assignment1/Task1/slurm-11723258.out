@@ -1,0 +1,27 @@
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 7.62/10, +2.38)
+
+===================================================================================
+SLURM Job ID:            11723258
+Submit time:             Wed Feb 05 22:23:33 GMT 2025 (Unix Epoch time: 1738794213)
+Start time:              Wed Feb 05 22:24:38 GMT 2025 (Unix Epoch time: 1738794278)
+No. nodes:               1
+No. tasks:               1
+Job name:                goodcode_test
+Account:                 teaching
+QoS:                     teaching
+Partition (queue):       teaching-gpu
+Submit directory:        /users/vib22141/PH510/Task1
+Script name:             /users/vib22141/PH510/Task1/generic.sh
+Master node:             weegpu4
+Nodes used:              weegpu4
+Task distribution:       
+===================================================================================
+
+===================================================================================
+SLURM job 11723258 ended:     Wed Feb 05 22:23:09 GMT 2025 (Unix Epoch time: 1738794189)
+This is an estimated end time using the 'date' command from node weegpu4.hpc.strath.ac.uk
+For accurate timings, use 'sacct -j 11723258 -X --format=Submit,Start,End,Elapsed'
+======================================================================================
+slurmstepd: error: Pid 715077 is still in the freezer job cgroup.  It might be left uncleaned after the job.
