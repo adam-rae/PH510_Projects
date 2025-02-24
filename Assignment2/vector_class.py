@@ -98,6 +98,11 @@ class PolarVector(Vector):
        
     """
     def __init__(self, r, theta, phi):
+        """
+        Calculates the Cartesian equivalent of the polar coordinates and stores the PolarVector
+        as a Vector
+
+        """
         theta = np.deg2rad(theta)
         phi = np.deg2rad(phi)
         Vector.__init__(self,
